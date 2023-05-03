@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* :root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+} */
+:root {
+  /* || COLORS || */
+  --light-primary-color: #c4f2fab4;
+  --primary-color: #0d8297;
+  --deep-primary-color: #0a5764;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Poppins, sans-serif;
+}
+
+button, input, textarea {
+  font-family: inherit;
+}
+
+img {
+  display: block;
+}
+
+.company__name {
+  font-family: LightTube;
+  font: bolder;
+  background: linear-gradient(45deg, #034652, #034d5a, #ddd);
+  background: -webkit-linear-gradient(45deg, #034652, #034d5a, #ddd);
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+.navs {
+  will-change: filter;
+  transition: 300ms;
+}
+
+.navs:hover {
+  background-color:  #2db2c4;
+}
+
+/* .hero {
+  background-image: url('../src/assets/ftwo.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+} */
+
+.hero {
+  height: calc((2/3) * 100vw);
+  background: rgba(97, 233, 238, 0.541);
+}
+
+@media screen and (max-width:890px) {
+  .hero {
+    height: calc((2/3) * 100vw);
+  }
+}
+
+@media screen and (max-width:770px) {
+  .hero {
+    height: calc((3/4) * 100vw);
+  }
+}
+
+@media screen and (max-width:695px) {
+  .hero {
+    height: calc((5/7) * 100vw);
+  }
+}
+@media screen and (max-width:645px) {
+  .hero {
+    height: calc((4/5) * 100vw);
+  }
+}
+@media screen and (max-width:590px) {
+  .hero {
+    height: calc((19/20) * 100vw);
+  }
+}
+@media screen and (max-width:500px) {
+  .hero {
+    height: calc(100vw);
+  }
+}
+@media screen and (max-width:460px) {
+  .hero {
+    height: calc((5/4) * 100vw);
+  }
+}
+
+@media screen and (max-width:425px) {
+  .hero {
+    height: 170vw;
+  }
+}
+
+@media screen and (max-width:370px) {
+  .hero {
+    height: 190vw;
+  }
+}
+
+@media screen and (max-width:351px) {
+  .hero {
+    height: 200vw;
+  }
+}
+
+@media screen and (max-width:335px) {
+  .hero {
+    height: 210vw;
+  }
+}
+
+@media screen and (max-width:328px) {
+  .hero {
+    height: 237vw;
+  }
+}
+
+@media screen and (max-width:300px) {
+  .hero {
+    height: 280vw;
+  }
+}
+
+
+
+
+.hero-text-section {
+  background: linear-gradient(90deg, rgb(123, 235, 235), #ffffff6e, transparent);
+} @media screen and (max-width:600px) {
+  .hero-text-section {
+    background: linear-gradient(180deg, transparent, #ffffffcc, rgb(156, 236, 236));
+  }
+}
+
+@media screen and (min-width:1060px) {
+  .shadowful {
+    box-shadow: 2px 2px 5px 5px rgb(122, 188, 204);
+    margin-top: calc((-1/7) * 100vw);
+  }
+}
+
+@media screen and (min-width:1450px) {
+  .shadowful {
+    box-shadow: 2px 2px 5px 5px rgb(122, 188, 204);
+    margin-top: calc((-3/10) * 100vw);
+  }
+}
+
+@media screen and (min-width:1750px) {
+  .shadowful {
+    box-shadow: 2px 2px 5px 5px rgb(122, 188, 204);
+    margin-top: calc((-3/8) * 100vw);
+    z-index: 20;
+  }
+}
+
+
+
+@media screen and (max-width:450px) {
+  .difference {
+    top: 640px;
+  }
+}
