@@ -1,5 +1,5 @@
 import React from 'react'
-import { Navbar, Hero, FeaturedIn, Elevate, Workstation, Conference, Lounge, } from './components'
+import { Navbar, Hero, FeaturedIn, Elevate, Workstation, Conference, Lounge, SmallCategory, } from './components'
 import OurDifference from './components/OurDifference'
 
 const App = () => {
@@ -17,12 +17,16 @@ const App = () => {
         <FeaturedIn />
         this is the continuation
       </div> */}
-      <div>
+      <div className={`sm:flex hidden flex-col`}>
         <FeaturedIn />
         <Elevate />
         <Workstation />
         <Conference />
         <Lounge />
+      </div>
+      <div className={`sm:hidden flex flex-col`}>
+        <FeaturedIn />
+        <SmallCategory />
       </div>
     </div>
   )

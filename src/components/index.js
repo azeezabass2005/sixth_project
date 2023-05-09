@@ -5,6 +5,7 @@ import Elevate from "./Elevate";
 import Workstation from "./Workstation";
 import Conference from "./Conference";
 import Lounge from "./Lounge";
+import SmallCategory from "./SmallCategory";
 
 export {
     Navbar,
@@ -14,4 +15,5 @@ export {
     Workstation,
     Conference,
     Lounge,
+    SmallCategory,
 }
